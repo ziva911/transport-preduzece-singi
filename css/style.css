@@ -1,0 +1,651 @@
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+font-family: Arial;
+}
+
+body { 
+background-color: #B0B0B0;
+}
+#big-wrapper {
+	box-shadow: 0 0 100px 100px grey;
+	background-color: rgb(246, 246, 246);
+	width: 100%;
+	max-width: 1024px;
+	min-height: 90vh;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#header_wrapper{
+	display:block;
+	width: 100%;
+	min-height: 10em;
+	margin: 0 auto;
+	position: relative;
+
+}
+#logoContainer{
+	display: block;
+}
+
+
+
+#header{
+	height: 100%;
+	padding:15px 0;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	height: 150px;
+	text-align: center;
+	font-size: 2.5em;
+
+}
+#header img{
+	height: 85%;
+	display:inline-block;
+
+	padding: 20px 0px 0px 20px;
+}
+#header h1{
+	margin-bottom:10px;
+	padding-top: 20px;
+	color: red;
+}
+#wrapper{
+	width: 100%;
+	min-height: 90%;
+	margin: 0 auto;
+}
+
+#nav{
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Arial", "Verdana", sans-serif;
+	border-bottom: 1px solid #707070;
+}
+
+#nav ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	list-style-type: none;
+	font-size: 1.5em;
+	text-align: center;
+
+}
+
+.test {
+	width: 100%;
+}
+.test a{
+	width: 100%;
+	display:block;
+	padding: 4px 0;
+}
+
+#nav ul li{
+	flex:1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+
+#nav ul li:hover{
+	background-image: radial-gradient(circle, #999999, #99999900);
+	text-shadow: 1px 1px 5px #707070;	
+}
+#nav ul li:hover > #nav a{
+	color: white;
+}
+#nav a {
+	text-decoration: none;
+	color:#276955;
+}
+
+#promo-wrapper {
+	height: 100vh;
+	opacity: 100%;
+	background-image: url("../images/homepage.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 790px;
+  }
+  #promo-container {
+	height: 100%;
+	margin: auto auto;
+	text-align: center;
+	font-size: 1.5em;
+	color: #f1f1f1;
+	background-image: linear-gradient(to bottom, #7e7e7e00, #7e7e7e);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  #promo-wrapper div {
+	padding: 0 50px;
+  }
+  #promo-container h2 {
+	font-size: 2.5em;
+	color: #f1f1f1;
+  }
+  #name-wrapper {
+	z-index:1 ;
+	width: 85%;
+	margin: 0 auto;
+  }
+  #name-wrapper * {
+	width: 100%;
+  }
+  #promo-container h4 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #f1f1f1;
+	font-variant: small-caps;
+  }
+  h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #f1f1f1;
+	font-variant: small-caps;
+	padding-bottom: 20px;
+  }
+
+#footer{
+	box-shadow: -5px 0 5px -5px grey, 5px 0 5px -5px grey;
+	background-color: rgb(246, 246, 246);
+	text-align: center;
+	
+}
+#footer p{
+	padding: 10px;
+}
+
+
+.fieldset {
+	border: none;
+	margin:0 50px;
+	padding-bottom: 50px;
+}
+
+#redVoznje , #redVoznjeDodaj {
+	font-family: "Arial", "Verdana", sans-serif;
+	margin: 0px auto;
+	text-align: center;
+	padding:0;
+	font-size:1.5em;
+}
+#redVoznje .dummy , #redVoznjeDodaj .dummy{
+	margin-top:10px;
+	width: 150px;
+}
+
+#redVoznje td, #redVoznjeDodaj td , #redVoznjeDodaj tr {
+	margin:1em;
+	padding:0;
+	width:200px;
+	height:50px;
+	border:1px solid gray;
+
+
+}
+#redVoznjeDodaj th {
+	margin:1em;
+	padding:0;
+	width:200px;
+	height:50px;
+	border:none;
+	
+
+
+}
+#redVoznje .dummy tr td>*{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+		text-align: center;
+	font-size:1em;
+	
+}
+#redVoznje .dummy tr td {
+	margin:0;
+	padding:0;
+	width:20%;
+	height:50px;
+		text-align: center;
+	font-size: 1.5em;
+	
+}
+#make-reservation{
+	
+	border: none;	
+	margin:20px auto 0 auto;
+	width:50%;
+	text-align:left;
+}
+#make-reservation  * tr{	
+	line-height: 2em;
+}
+#make-reservation select, #make-reservation input, #make-reservation option{	
+	width: 100%;
+	text-align: center;
+}
+
+
+.delete{
+	
+	height:100% !important;
+	width: 100% !important;
+	font-weight: bold;
+	color: red;
+}
+
+	#buttonWraper{
+		
+		margin: 30px;
+		list-style: none;
+
+
+		width:100%;
+	}	
+	.formButtons {
+		display: inline-block;
+		margin: 30px 0px;
+  		padding: 0px 10px;
+  		width: auto;
+  		height: auto;
+
+  		line-height: 50px;
+  		color: black;
+  		font-size: .8em;
+  		text-align: center;
+  		font-weight: bold;
+
+
+	}
+
+.my-res-h2{
+	margin: 0 50px;
+	padding: 20px 0;
+}
+
+.loginForm {
+	font-family: Arial;
+	
+	width:400px;
+	margin: 0 auto;
+}
+.loginForm>h2 {
+	text-align: center;
+	
+}
+.loginForm>p {
+	text-align: center;
+	font-size: 0.7em;
+	margin-bottom: .2em;
+}
+.loginForm>label {
+	float:left;
+	margin-left: 20px;
+}
+.loginForm>input {
+	text-align: center;
+	margin-right: 20px;
+	width:50%;
+	height:1.5em;
+	float:right;
+}
+#loginbtn {
+		text-align: center;
+		width:50%;
+		height: 2em;
+}
+
+
+#registerForm {
+	font-family: Arial;
+	background-color: #DDD;
+	border: 1px solid #EEE;
+	width:400px;
+	margin: 0 auto;
+}
+#registerForm>h2 {
+	text-align: center;
+	
+}
+#registerForm>p {
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: .2em;
+}
+#registerForm>label {
+	text-align: left;
+	margin-left: 20px;
+}
+#registerForm>input {
+	text-align: center;
+	margin-right: 20px;
+	width:50%;
+	float:right;
+}
+#registerForm select {
+	text-align: center;
+	margin-right: 20px;
+	width:50%;
+	float:right;
+}
+#registerbtnDiv {
+	text-align: center;
+	
+	}
+	#registerbtnDiv>p {
+		margin-top:5px;
+		font-size:0.8em;
+		}
+		#registerbtnDiv>p>a {
+			text-decoration: none;
+			color:#276955;
+			}
+#registerbtn {
+	text-align: center;
+	width:50%;
+	height: 2em;
+	margin-top: 10px;
+	}
+
+
+.inputline {
+	width: 150px;
+	text-align: center;
+
+}
+.inputlinediv {
+	width: 200px;
+	text-align: right;
+
+}
+
+.loginForm {
+	margin:10px auto;
+	text-align:center;
+}
+
+.reservebtn {
+	text-align: center;
+	width:50%;
+	height: 2em;
+	margin-top: 10px;
+	
+}
+#timetable-wrapper {
+	width:50%;
+	margin: 50px auto 0 auto;
+	text-align:center;
+
+}
+#timetable-wrapper h2 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+#timetableTable {
+
+	text-align: center;
+	width:50%;
+	margin: 10px auto;
+	align-content: center; 
+}
+#timetableTable>input {
+
+	text-align: center;
+	
+}
+
+
+
+#error404{
+	text-align:center;
+margin: 0 auto;
+margin-top:400px;
+}
+#error404 *{
+
+	margin: 20px 0;
+}
+#error404>h1{
+	color:rgb(104, 16, 16);
+	
+}
+#error404>a{
+	color:rgb(104, 16, 16);
+	text-decoration: none;
+}
+
+
+.container {
+	width:50%;
+	margin: 0 auto;
+	text-align:center;
+	margin-top: 100px;
+}
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+canvas{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.cleaner{
+	clear:both;
+
+
+}
+.spanStanice {
+color: #276955;
+font-weight: bold;
+font-size: 1.4em;
+
+}
+
+.kontakt-wrapper .info {
+	padding: 40px 40px 0 40px;
+  }
+  .kontakt-wrapper .info div {
+	padding: 30px 30px;
+  }
+  #employees {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+	justify-content: space-around;
+	text-align: left;
+	color: #7e7e7e;
+	padding: 0 40px;
+	padding-bottom: 50px;
+  }
+  .employee {
+	padding: 10px 20px;
+	font-size: 1.2em;
+	margin-top: 20px;
+	display: inline-block;
+	background-color: rgb(230, 230, 230);
+	width: 250px   !important;
+	vertical-align: top;
+  }
+  .employee p {
+	padding: 10px 0;
+	font-size: 0.8em;
+  }
+  .employee h4 {
+	padding: 10px 0;
+	font-size: 1.2em;
+  }
+  .dva {
+	padding-bottom: 130px;
+  }
+  #footer {
+	  width: 100%;
+	  margin: 0 auto;
+	max-width: 1024px;
+	background-color: #2c2c2c;
+	color: #f1f1f1;
+	min-height: 50px;
+	text-align: center;
+	padding-top: 20px;
+  }
+  #footer p {
+	color: #f1f1f1;
+  }
+  
+  .opacity {
+	background: rgba(204, 204, 204, 0.5);
+  }
+  .addbg {
+	background-color: rgba(204, 204, 204, 0.8);
+  }
+  .kontakt-wrapper span{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: darkolivegreen;
+  }
+  .info div * {
+	margin-bottom: 10px;
+  }
+
+ #kontakt h2, #kontakt-naslov {
+	font-size: 1.5em;
+	padding: 30px 0; 
+	background-color: #2c2c2c;
+	color: white;
+	text-align: center;
+	border-top: 1px solid white ;
+  }
+  #bread{
+	  padding: 10px 10px;
+  }
+  .breadcrumbs {
+	  font-size: 0.7em;
+	  color: #276955;
+	  
+  }
+  .breadcrumbs *{
+	text-decoration: none;	
+	color: #276955;
+	}
+	.employee * {
+		text-decoration: none;	
+	}
+	.info * {
+		text-decoration: none;	
+	}
+  #map {
+	height: 400px;  /* The height is 400 pixels */
+	width: 100%;  /* The width is the width of the web page */
+   }
+
+   #o-nama{
+	   margin-top: 50px;
+	   padding-bottom: 150px;
+   }
+   #par1 .text-info,#par2 .text-info {
+	display: block;
+	min-width: 50%;
+  }
+  #par1 .text-info h2 {
+	text-align: justify;
+	margin-bottom: 50px;
+	font-size: 2em;
+  }
+  #par1 .text-info p, #par2 .text-info p {
+	text-align: justify;
+	margin-bottom: 20px;
+	font-size: 1em;
+  }
+  #par1,#par2 {
+	  display: block;
+	width: 100%;
+	vertical-align: top;
+	padding: 0 100px;
+	
+  }
+  #par1 .text-info {
+	display: inline-block;
+	width: 40%;  
+	text-align: justify;
+	padding-left: 0;
+	padding-right: 40px;
+	max-height: 250px;
+  }
+  #par2 .text-info {
+	display: inline-block;
+	vertical-align: text-bottom;
+	text-align: justify;
+	padding-right: 0;
+	float: right;
+	max-height: 250px;
+  }
+  
+  #par1 .img-info {
+	display: inline-block;
+	background-image: url("../images/homepage.jpg");
+	background-repeat: repeat-x;
+	background-size: contain;
+	text-align: right;
+	width: 40%;
+	min-height: 250px;
+	vertical-align: top;
+	float: right;
+	padding: 0;
+  }
+  #logoImg{
+	padding: 10px !important;
+}
+@media only screen and (max-width: 800) {
+	
+	#header {
+	  display:block;
+	  width:70%;
+		margin:0 auto;
+	}
+	#timetable-wrapper{
+		width: 80vw;
+	}
+	#timetable-wrapper h2 {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 3em;
+	}
+	#timetableTable>input {
+		font-size: 2em;
+		text-align: center;
+	}
+	#timetableTable>label {
+		
+		margin-top: 20px;
+		font-size: 2em;
+		text-align: left;
+	}
+	#timetableTable>p {
+		
+		margin-top: 20px;
+		font-size: 2em;
+		text-align: center;
+	}
+  }
+  #line-main-info{
+	  width: 90%;
+	  margin: 50px auto;
+  }
+  #download-form{
+	  padding-bottom: 100px;
+  }
+ #download-button{
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+ } 
